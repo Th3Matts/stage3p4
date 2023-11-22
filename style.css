@@ -1,6 +1,7 @@
 .grade{
   display: grid;
   gap: 8px;
+  margin-bottom: 10rem;
 }
 
 .grade > div{
@@ -15,9 +16,7 @@
 .colunas{
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(2, 1fr);
-
-  margin-top: 1rem;
+  grid-template-columns: 140px 140px 140px;
 }
 
 .colunas > div{
@@ -32,7 +31,7 @@
   display: grid;
   grid-template-rows: 1fr 2fr 3fr;
   gap: 8px;
-  margin-top: 1rem;
+  margin-top: 10rem;
 }
 
 .linhas > div{

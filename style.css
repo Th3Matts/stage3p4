@@ -27,12 +27,21 @@
   border: 5px solid #caffbf;
 }
 
+
+
+
+
 .linhas{
   display: grid;
-  grid-template-rows: 1fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr 3fr 1fr;
   gap: 8px;
-  margin-top: 10rem;
 }
+
+
+
+
+
+
 
 .linhas > div{
   border: 5px solid #9bf6ff;

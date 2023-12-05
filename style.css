@@ -19,7 +19,6 @@ body{
 
 .grade span{
   border: 5px solid #ffd6a5;
-
 }
 
 .colunas{
@@ -43,7 +42,7 @@ body{
 
   margin-bottom: 5rem;
 }
-
+a
 .linhas > div{
   border: 5px solid #9bf6ff;
 }
@@ -54,49 +53,38 @@ body{
 
 .area{
   display: grid;
+  
+  height: 15rem;
 
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(4, 1fr);
-
+  grid-template-areas:
+  " header  header header "
+  " aside   main    main  "
+  " footer  footer footer "
+  ;
   gap: 8px;
-
 }
 
 .area header{
   border: 5px solid  #ffadad;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 3rem;
 
-  grid-row: 1/5;
+  grid-area: header;
 }
 
 .area aside{
   border: 5px solid  #caffbf;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  grid-column: 2/4;
-  grid-row: 1/4;
+  grid-area: aside;
 }
 
 .area main{
   border: 5px solid  #ffd6a5;
 
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  
+  grid-area: main;
 }
 
 .area footer{
   border: 5px solid  #bdb2ff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: footer;
 }

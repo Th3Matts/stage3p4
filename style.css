@@ -51,18 +51,28 @@ body{
   border: 5px solid #a0c4ff;
 }
 
+
+
+
+
 .area{
   display: grid;
   
-  height: 15rem;
-
-  grid-template-areas:
-  " header header header header "
-  " aside  main   main   main  "
-  " footer footer footer footer "
-  ;
+  grid-template:
+  " header header header header " 2rem
+  " aside  main   main   main  "  15rem
+  " footer footer footer footer " 2rem / 5rem
+  ; 
   gap: 8px;
 }
+
+
+
+
+
+
+
+
 
 .area header{
   border: 5px solid  #ffadad;
@@ -86,5 +96,27 @@ body{
 .area footer{
   border: 5px solid  #bdb2ff;
 
-  grid-area: footer;
+  grid-area: d;
+}
+
+.spacing{
+  background: aquamarine;
+
+  width: 60%;
+  height: 30rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+
+  place-content: space-between ;
+
+  padding: 1rem;
+}
+
+.spacing span{
+  border: 5px solid #f9b2ff;
+
+  background: white;
 }

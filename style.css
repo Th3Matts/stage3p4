@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 ::-webkit-scrollbar{
   background: transparent;
 }
@@ -5,6 +9,8 @@
 body{
   display: flex;
   flex-direction: column;
+
+  align-items: end;
   gap: 2rem;
 }
 
@@ -39,8 +45,6 @@ body{
   display: grid;
   grid-template-rows: 1fr 2fr 3fr 1fr;
   gap: 8px;
-
-  margin-bottom: 5rem;
 }
 
 .linhas > div{
@@ -51,46 +55,32 @@ body{
   border: 5px solid #a0c4ff;
 }
 
-
-
-
-
 .area{
   display: grid;
   
   grid-template:
-  " header header header header " 2rem
-  " aside  main   main   main  "  15rem
-  " footer footer footer footer " 2rem / 5rem
+  " a a a a " 2rem
+  " b  c   c   c  "  15rem
+  " d d d d " 2rem / 5rem
   ; 
   gap: 8px;
 }
 
-
-
-
-
-
-
-
-
 .area header{
   border: 5px solid  #ffadad;
 
-  height: 2rem;
-
-  grid-area: header;
+  grid-area: a;
 }
 
 .area aside{
   border: 5px solid  #caffbf;
-  grid-area: aside;
+  grid-area: b;
 }
 
 .area main{
   border: 5px solid  #ffd6a5;
 
-  grid-area: main;
+  grid-area: c;
 }
 
 .area footer{

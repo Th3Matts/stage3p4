@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar{
@@ -14,83 +16,8 @@ body{
   gap: 2rem;
 }
 
-.grade{
-  display: grid;
-  gap: 8px;
-}
-
-.grade > div{
-  border: 5px solid  #ffadad;
-}
-
-.grade span{
-  border: 5px solid #ffd6a5;
-}
-
-.colunas{
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 1fr 2fr 1fr;
-}
-
-.colunas > div{
-  border: 5px solid #fdffb6;
-}
-
-.colunas span{
-  border: 5px solid #caffbf;
-}
-
-.linhas{
-  display: grid;
-  grid-template-rows: 1fr 2fr 3fr 1fr;
-  gap: 8px;
-}
-
-.linhas > div{
-  border: 5px solid #9bf6ff;
-}
-
-.linhas span{
-  border: 5px solid #a0c4ff;
-}
-
-.area{
-  display: grid;
-  
-  grid-template:
-  " a a a a " 2rem
-  " b  c   c   c  "  15rem
-  " d d d d " 2rem / 5rem
-  ; 
-  gap: 8px;
-}
-
-.area header{
-  border: 5px solid  #ffadad;
-
-  grid-area: a;
-}
-
-.area aside{
-  border: 5px solid  #caffbf;
-  grid-area: b;
-}
-
-.area main{
-  border: 5px solid  #ffd6a5;
-
-  grid-area: c;
-}
-
-.area footer{
-  border: 5px solid  #bdb2ff;
-
-  grid-area: d;
-}
-
 .spacing{
-  background: aquamarine;
+  background: cornflowerblue;
 
   width: 60%;
   height: 30rem;
@@ -100,9 +27,7 @@ body{
   grid-template-rows: repeat(3, 100px);
   gap: 8px;
 
-  place-content: space-between ;
-
-  padding: 1rem;
+  justify-content: space-around;
 }
 
 .spacing span{
